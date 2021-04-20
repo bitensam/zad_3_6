@@ -1,0 +1,17 @@
+body {
+    font-size: 16px;
+    text-align: center;
+}
+
+.navbar-linklist {
+    
+    margin: 0;
+
+    li {
+        display: inline-block;
+
+        .nav-link {
+            margin-right: 10px;
+        }
+    }
+}

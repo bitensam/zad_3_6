@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="/zad-3-6/vendor/bootstrap-grid.css">
-    <link rel="stylesheet" href="/zad-3-6/css/style.css">
+    <link rel="stylesheet" href="/vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto+Mono:wght@200;400;700&display=swap"
@@ -17,25 +17,31 @@
 <body>
     <header class="banner">
         <nav class="navbar">
-            <a class="navbar-brand" href="#">Golden</a>
-            <div class="navbar-linkbox">
-                <ul>
-                    <li>
-                        <a class="nav-link">HOME</a>
-                    </li>
-                    <li>
-                        <a class="nav-link">SERVICES</a>
-                    </li>
-                    <li>
-                        <a class="nav-link">PORTFOLIO</a>
-                    </li>
-                    <li>
-                        <a class="nav-link">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="nav-link">CONTACT</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="navbar-brand" href="#">Golden</a>
+                    </div>
+                    <div class="col-8">
+                        <ul class="navbar-linklist">
+                            <li>
+                                <a class="nav-link">HOME</a>
+                            </li>
+                            <li>
+                                <a class="nav-link">SERVICES</a>
+                            </li>
+                            <li>
+                                <a class="nav-link">PORTFOLIO</a>
+                            </li>
+                            <li>
+                                <a class="nav-link">ABOUT</a>
+                            </li>
+                            <li>
+                                <a class="nav-link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="container banner-body">
@@ -51,23 +57,28 @@
                 <p class="section-description">Sed tincidunt enim nec nisl blandit, porta pulvinar lacus laoreet.</p>
             </div>
             <div class="services-container-cardbox">
-                <div class="services-card">
-                    <i class="#"></i>
-                    <h2 class="services-card-title">E-Commerce</h2>
-                    <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus
-                        sed molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-                </div>
-                <div class="services-card">
-                    <i class="#"></i>
-                    <h2 class="services-card-title">Responsive Web</h2>
-                    <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus
-                        sed molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-                </div>
-                <div class="services-card">
-                    <i class="#"></i>
-                    <h2 class="services-card-title">Web security</h2>
-                    <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus
-                        sed molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                <div class="row">
+                    <div class="services-card col-4">
+                        <i class="#"></i>
+                        <h2 class="services-card-title">E-Commerce</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <i class="#"></i>
+                        <h2 class="services-card-title">Responsive Web</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <i class="#"></i>
+                        <h2 class="services-card-title">Web security</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,52 +89,73 @@
                 <h1 class="section-title">Our Portfolio</h1>
                 <p class="section-description">Sed tincidunt enim nec nisl blandit, porta pulvinar lacus laoreet.</p>
             </div>
-        </div>
-        <div class="portfolio-container-cardbox">
-            <div class="services-card">
-                <img src="#" class="#">
-                <h2 class="services-card-title">Ebony &amp; Ivory</h2>
-                <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus sed
-                    molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-            </div>
-            <div class="services-card">
-                <img src="#" class="#">
-                <h2 class="services-card-title">Smart Stationary</h2>
-                <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus sed
-                    molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-            </div>
-            <div class="services-card">
-                <img src="#" class="#">
-                <h2 class="services-card-title">Clever Poster</h2>
-                <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus sed
-                    molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-            </div>
-            <div class="services-card">
-                <img src="#" class="#">
-                <h2 class="services-card-title">Vinyl Record</h2>
-                <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus sed
-                    molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-            </div>
-            <div class="services-card">
-                <img src="#" class="#">
-                <h2 class="services-card-title">Treehouse Template</h2>
-                <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus sed
-                    molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
-            </div>
-            <div class="services-card">
-                <img src="#" class="#">
-                <h2 class="services-card-title">Burned Logo</h2>
-                <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu. Phasellus sed
-                    molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+            <div class="portfolio-container-cardbox">
+                <div class="row">
+                    <div class="services-card col-4">
+                        <img src="#" class="#">
+                        <h2 class="services-card-title">Ebony &amp; Ivory</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed
+                            molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <img src="#" class="#">
+                        <h2 class="services-card-title">Smart Stationary</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed
+                            molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <img src="#" class="#">
+                        <h2 class="services-card-title">Clever Poster</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed
+                            molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <img src="#" class="#">
+                        <h2 class="services-card-title">Vinyl Record</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed
+                            molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <img src="#" class="#">
+                        <h2 class="services-card-title">Treehouse Template</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed
+                            molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                    <div class="services-card col-4">
+                        <img src="#" class="#">
+                        <h2 class="services-card-title">Burned Logo</h2>
+                        <p class="services-card-text">Morbi commodo tincidunt sem, at iaculis nisl interdum eu.
+                            Phasellus
+                            sed
+                            molestie lacus. Ut ac elementum ligula, id blandit orci.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <div>
-                <h3 class="footer-title"></h3>
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="footer-title">&copy; Copyright 2021 bitensam.com</h3>
+                </div>
+                <div class="footer-logobox col-4">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-google"></i>
+                </div>
             </div>
-            <div class="footer-logobox"></div>
         </div>
     </footer>
 </body>
