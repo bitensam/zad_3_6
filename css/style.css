@@ -1,10 +1,74 @@
+/*GLOBAL RESET*/
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*GLOBAL*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
   text-align: center;
 }
 
-.navbar-linklist {
-  margin: 0;
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+.btn-main {
+  padding: 10px 20px;
+  border: 2px solid black;
+}
+
+section {
+  padding: 96px 0;
+}
+
+/*HEADER*/
+.navbar {
+  padding: 48px 0;
+  background-color: transparent;
 }
 
 .navbar-linklist li {
@@ -12,6 +76,25 @@ body {
 }
 
 .navbar-linklist li .nav-link {
-  margin-right: 10px;
+  margin-right: 0.8rem;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGVBQWU7RUFDZixrQkFBa0I7QUNDdEI7O0FERUE7RUFFSSxTQUFTO0FDQWI7O0FERkE7RUFLUSxxQkFBcUI7QUNDN0I7O0FETkE7RUFRWSxrQkFBa0I7QUNFOUIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+
+.navbar-brand {
+  text-align: left;
+}
+
+.banner {
+  background-image: url("https://i.postimg.cc/CMJVQtyn/pawel-czerwinski-o-X0d-Dq-BHx7-Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.banner-body {
+  padding: 48px 0 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxlQUFBO0FBR0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFzQkksU0FBUztFQUNULFVBQVU7RUFDVixTQUFTO0FDRGI7O0FESUEsU0FBQTtBQUVBO0VBQ0Msc0JBQXNCO0FDRnZCOztBREtBO0VBQ0ksZUFBZTtFQUNmLGtCQUFrQjtBQ0Z0Qjs7QURLQTtFQUNJLHFCQUFxQjtBQ0Z6Qjs7QURLQTtFQUNJLGVBQWU7QUNGbkI7O0FES0E7RUFDSSxpQkFBaUI7QUNGckI7O0FES0E7RUFDSSxlQUFlO0FDRm5COztBREtBO0VBQ0ksbUJBQW1CO0FDRnZCOztBREtBO0VBQ0ksa0JBQWtCO0VBQ2xCLHVCQUF1QjtBQ0YzQjs7QURLQTtFQUNJLGVBQWU7QUNGbkI7O0FETUEsU0FBQTtBQUVBO0VBQ0ksZUFBZTtFQUNmLDZCQUE2QjtBQ0pqQzs7QURPQTtFQUdRLHFCQUFxQjtBQ043Qjs7QURHQTtFQU1ZLG9CQUFvQjtBQ0xoQzs7QURVQTtFQUNJLGdCQUFnQjtBQ1BwQjs7QURVQTtFQUNJLG9HQUFvRztFQUNwRyxzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLFlBQVk7QUNQaEI7O0FEVUE7RUFDSSxvQkFBb0I7RUFDcEIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsbUJBQW1CO0FDUHZCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
