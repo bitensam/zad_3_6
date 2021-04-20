@@ -68,6 +68,9 @@ section {
     padding: 96px 0;
 }
 
+.container-textbox {
+    margin-bottom: 48px;
+}
 
 /*HEADER*/
 
@@ -104,4 +107,62 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*SERVICES*/
+
+.services {
+
+    i {
+        margin-bottom: 24px;
+    }
+}
+
+/*portfolio*/
+
+.portfolio {
+    background-color: lightgray;
+
+    .row {
+        padding-bottom: 48px;
+    }
+
+    .services-card-textbox {
+        background-color: white;
+        padding: 24px 0;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 240px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+/*footer*/
+
+footer {
+    padding: 24px 0;
+
+    .footer-title {
+        display: flex;
+        align-items: center;
+        
+        h3 {
+            margin: 0;
+        }
+    }
+
+    .footer-logobox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            margin-right: 10px;
+        }
+    }
 }
