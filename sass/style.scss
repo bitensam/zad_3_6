@@ -1,3 +1,17 @@
+/*VARIABLES*/
+
+$font-header: 'Montserrat', sans-serif;
+
+$font-text: 'Roboto', monospace;
+
+$font-brand: 'Dancing Script', cursive;
+
+$color-brand: #FDB833;
+
+$color-main: #1789FC;
+
+
+
 /*GLOBAL RESET*/
 
 
@@ -37,10 +51,12 @@ tr, th, td {
 body {
     font-size: 16px;
     text-align: center;
+    font-family: $font-text;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
@@ -52,20 +68,32 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    font-weight: 400 ;
 }
 
 h1, h2, h3 {
     margin-bottom: 1rem;
+    font-family: $font-header;
+    text-transform: uppercase;
 }
 
-.btn-main {
+
+.button {
     padding: 10px 20px;
-    border: 2px solid black;
+    background-color: $color-brand;
+    font-family: $font-text;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 section {
     padding: 96px 0;
+
+    .section-description {
+        color: darkgray;
+    }
 }
 
 .container-textbox {
@@ -92,6 +120,11 @@ section {
 
 .navbar-brand {
     text-align: left;
+    font-family: $font-brand;
+
+        a {
+            color: $color-brand;
+        }
 }
 
 .banner {
@@ -114,22 +147,42 @@ section {
 .services {
 
     i {
-        margin-bottom: 24px;
+        font-size: 30px;
+        color: $color-brand;
+        width: 60px;
+        height: 60px;
+        border: 2px solid $color-brand;
+        border-radius: 50%;
+        background-color: white;
+        line-height: 55px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    h2 {
+        margin-top: 24px;
+    }
+
+    p {
+        font-size: 0.75rem;
     }
 }
 
 /*portfolio*/
 
 .portfolio {
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
 
-    .row {
-        padding-bottom: 48px;
+    .services-card {
+        margin-bottom: 24px;
     }
 
     .services-card-textbox {
         background-color: white;
         padding: 24px 0;
+        p {
+            color: darkgray;
+        }
     }
 
     .card-img {
@@ -139,6 +192,7 @@ section {
         img {
             object-fit: cover;
         }
+
     }
 }
 
@@ -150,7 +204,8 @@ footer {
     .footer-title {
         display: flex;
         align-items: center;
-        
+        text-align: left;
+
         h3 {
             margin: 0;
         }
@@ -163,6 +218,14 @@ footer {
 
         i {
             margin-right: 10px;
+            font-size: 16px;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: black;
+            line-height: 32px;
+            text-align: center;
         }
     }
 }
