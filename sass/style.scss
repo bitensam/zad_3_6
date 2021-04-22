@@ -260,6 +260,7 @@ footer {
             background-color: black;
             line-height: 28px;
             text-align: center;
+            cursor: pointer;
 
             &:hover {
                 color: $color-brand;
@@ -267,4 +268,35 @@ footer {
 
         }
     }
+}
+
+@media (max-width: 999px) {
+    
+    .navbar {
+        .navbar-brand {
+            padding-bottom: 24px;
+            text-align: center;
+        }
+    }
+    
+
+    .services-card {
+        padding-bottom: 48px;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+
+    .portfolio {
+        .card-img {
+            height: 500px;
+        }
+    }
+
+    .footer-title {
+        padding-bottom: 48px;
+        justify-content: center;
+    }
+
 }
